@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#FFA732,#EF4040,#C21292,#711DB0);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0  50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.image{
+   position: relative;
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   background-color: #900C3F;
+   padding: 3px;
+}
+
+.image .profil-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px  solid #ffff;
+    margin-bottom: 10px;
+}
+
+.profile{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    width: 100%;
+    max-width: 370px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 24px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 25px;
+    position: relative;
+}
+
+
+ .profile .text-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffff;
+        text-shadow:black 10px 10px 25px
+ }
+
+ .profile .text-data .name{
+    font-size: 22px;
+    font-weight: 600;
+ }
+
+ .profile .text-data .deskripsi{
+    font-size: 15px;
+    font-weight: 300;
+ }
+
+ .profile .media-icons{
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+ }
+
+ .media-icons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4C3D3D;
+    font-size: 20px;
+    height:34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color:#ffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ .media-icons .link:hover{
+    background-color: #4C3D3D;
+    color: #ffff;
+ }
+
+ .profile .buttons{
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+ }
+
+ .buttons .tombol{
+    background-color: #FFBB5C;
+    font-weight: 600;
+    color: #4C3D3D;
+    margin: 0 10px;
+    font-size: 14px;
+    border-radius: 24px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+ }
+ .buttons .tombol:hover{
+    background-color: #900C3F;
+    color: #ffff;
+ }
